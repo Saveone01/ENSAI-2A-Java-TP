@@ -20,7 +20,12 @@ public class Author {
         this.age = age;
         this.nationality = nationality;
     }
-
+    public Author(String name) {
+        this.name = name;
+        this.age = 0;  // Valeur par défaut
+        this.nationality = "Unknown";  // Valeur par défaut
+    }
+    
     public String getName() {
         return this.name;
     }
